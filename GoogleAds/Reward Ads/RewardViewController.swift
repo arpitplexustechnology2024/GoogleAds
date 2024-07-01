@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import GoogleMobileAds
 
 class RewardViewController: UIViewController {
     

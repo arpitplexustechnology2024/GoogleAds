@@ -11,6 +11,11 @@
 		B20A5A48437EC964AB672491 /* Pods_GoogleAds_GoogleAdsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3C2828156B688CFD9DCA5F /* Pods_GoogleAds_GoogleAdsUITests.framework */; };
 		B4752549E291FAD7F212FEA8 /* Pods_GoogleAdsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526DCC280DCEF225B0F28C9B /* Pods_GoogleAdsTests.framework */; };
 		BD7A13292C330CA000AAF84B /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13282C330CA000AAF84B /* RewardViewController.swift */; };
+		BD7A132B2C33208A00AAF84B /* BannerAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A132A2C33208A00AAF84B /* BannerAdUtility.swift */; };
+		BD7A132D2C33214A00AAF84B /* RewardAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A132C2C33214A00AAF84B /* RewardAdUtility.swift */; };
+		BD7A13322C3322B400AAF84B /* AppOpenAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13312C3322B400AAF84B /* AppOpenAdUtility.swift */; };
+		BD7A13352C33255D00AAF84B /* InterstitialAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13342C33255D00AAF84B /* InterstitialAdUtility.swift */; };
+		BD7A13382C33280600AAF84B /* NativeAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13372C33280600AAF84B /* NativeAdUtility.swift */; };
 		BDDF91482C2F691600956368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91472C2F691600956368 /* AppDelegate.swift */; };
 		BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91492C2F691600956368 /* SceneDelegate.swift */; };
 		BDDF914F2C2F691600956368 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDDF914E2C2F691600956368 /* Base */; };
@@ -23,7 +28,7 @@
 		BDDF917A2C2F6CBE00956368 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91792C2F6CBE00956368 /* BannerViewController.swift */; };
 		BDDF917C2C2F71D100956368 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */; };
 		BDDF91822C2F83B600956368 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91812C2F83B600956368 /* NativeViewController.swift */; };
-		BDDF918A2C2F927800956368 /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDDF91892C2F927800956368 /* UnifiedNativeAdView.xib */; };
+		BDDF918A2C2F927800956368 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDDF91892C2F927800956368 /* NativeAdView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		63C2D06B7643D5F0FC473E5A /* Pods-GoogleAds-GoogleAdsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds-GoogleAdsUITests.release.xcconfig"; path = "Target Support Files/Pods-GoogleAds-GoogleAdsUITests/Pods-GoogleAds-GoogleAdsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A02BA58559C8E30703EFA801 /* Pods_GoogleAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7A13282C330CA000AAF84B /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		BD7A132A2C33208A00AAF84B /* BannerAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdUtility.swift; sourceTree = "<group>"; };
+		BD7A132C2C33214A00AAF84B /* RewardAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAdUtility.swift; sourceTree = "<group>"; };
+		BD7A13312C3322B400AAF84B /* AppOpenAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenAdUtility.swift; sourceTree = "<group>"; };
+		BD7A13342C33255D00AAF84B /* InterstitialAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdUtility.swift; sourceTree = "<group>"; };
+		BD7A13372C33280600AAF84B /* NativeAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdUtility.swift; sourceTree = "<group>"; };
 		BDDF91442C2F691600956368 /* GoogleAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF91472C2F691600956368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF91492C2F691600956368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +79,7 @@
 		BDDF91792C2F6CBE00956368 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		BDDF91812C2F83B600956368 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
-		BDDF91892C2F927800956368 /* UnifiedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdView.xib; sourceTree = "<group>"; };
+		BDDF91892C2F927800956368 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
 		C220BB77BB5F6C0DEC0F13AA /* Pods-GoogleAdsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAdsTests.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAdsTests/Pods-GoogleAdsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +134,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD7A132E2C33223600AAF84B /* Reward Ads */ = {
+			isa = PBXGroup;
+			children = (
+				BD7A13282C330CA000AAF84B /* RewardViewController.swift */,
+				BD7A132C2C33214A00AAF84B /* RewardAdUtility.swift */,
+			);
+			path = "Reward Ads";
+			sourceTree = "<group>";
+		};
+		BD7A13302C33224F00AAF84B /* Banner Ads */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF91792C2F6CBE00956368 /* BannerViewController.swift */,
+				BD7A132A2C33208A00AAF84B /* BannerAdUtility.swift */,
+			);
+			path = "Banner Ads";
+			sourceTree = "<group>";
+		};
+		BD7A13332C33251D00AAF84B /* AppOpen Ads */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF91772C2F6A4B00956368 /* AppOpenViewController.swift */,
+				BD7A13312C3322B400AAF84B /* AppOpenAdUtility.swift */,
+			);
+			path = "AppOpen Ads";
+			sourceTree = "<group>";
+		};
+		BD7A13362C3326D400AAF84B /* Interstitial Ads */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */,
+				BD7A13342C33255D00AAF84B /* InterstitialAdUtility.swift */,
+			);
+			path = "Interstitial Ads";
+			sourceTree = "<group>";
+		};
+		BD7A13392C33291300AAF84B /* Native Ads */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF91892C2F927800956368 /* NativeAdView.xib */,
+				BDDF91812C2F83B600956368 /* NativeViewController.swift */,
+				BD7A13372C33280600AAF84B /* NativeAdUtility.swift */,
+			);
+			path = "Native Ads";
+			sourceTree = "<group>";
+		};
 		BDDF913B2C2F691600956368 = {
 			isa = PBXGroup;
 			children = (
@@ -151,13 +207,12 @@
 			children = (
 				BDDF91472C2F691600956368 /* AppDelegate.swift */,
 				BDDF91492C2F691600956368 /* SceneDelegate.swift */,
+				BD7A13332C33251D00AAF84B /* AppOpen Ads */,
+				BD7A13302C33224F00AAF84B /* Banner Ads */,
+				BD7A13362C3326D400AAF84B /* Interstitial Ads */,
+				BD7A13392C33291300AAF84B /* Native Ads */,
+				BD7A132E2C33223600AAF84B /* Reward Ads */,
 				BDDF914D2C2F691600956368 /* Main.storyboard */,
-				BDDF91892C2F927800956368 /* UnifiedNativeAdView.xib */,
-				BD7A13282C330CA000AAF84B /* RewardViewController.swift */,
-				BDDF91812C2F83B600956368 /* NativeViewController.swift */,
-				BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */,
-				BDDF91772C2F6A4B00956368 /* AppOpenViewController.swift */,
-				BDDF91792C2F6CBE00956368 /* BannerViewController.swift */,
 				BDDF91502C2F691700956368 /* Assets.xcassets */,
 				BDDF91522C2F691700956368 /* LaunchScreen.storyboard */,
 				BDDF91552C2F691700956368 /* Info.plist */,
@@ -294,7 +349,7 @@
 				BDDF91512C2F691700956368 /* Assets.xcassets in Resources */,
 				BDDF91542C2F691700956368 /* Base in Resources */,
 				BDDF914F2C2F691600956368 /* Base in Resources */,
-				BDDF918A2C2F927800956368 /* UnifiedNativeAdView.xib in Resources */,
+				BDDF918A2C2F927800956368 /* NativeAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,13 +477,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7A13382C33280600AAF84B /* NativeAdUtility.swift in Sources */,
 				BDDF91482C2F691600956368 /* AppDelegate.swift in Sources */,
 				BD7A13292C330CA000AAF84B /* RewardViewController.swift in Sources */,
 				BDDF91822C2F83B600956368 /* NativeViewController.swift in Sources */,
+				BD7A13322C3322B400AAF84B /* AppOpenAdUtility.swift in Sources */,
 				BDDF91782C2F6A4B00956368 /* AppOpenViewController.swift in Sources */,
+				BD7A132D2C33214A00AAF84B /* RewardAdUtility.swift in Sources */,
 				BDDF917A2C2F6CBE00956368 /* BannerViewController.swift in Sources */,
 				BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */,
 				BDDF917C2C2F71D100956368 /* InterstitialViewController.swift in Sources */,
+				BD7A132B2C33208A00AAF84B /* BannerAdUtility.swift in Sources */,
+				BD7A13352C33255D00AAF84B /* InterstitialAdUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import GoogleMobileAds
 
 class BannerViewController: UIViewController {
     
@@ -16,7 +15,6 @@ class BannerViewController: UIViewController {
         super.viewDidLoad()
         bannerAdUtility.setupBannerAd(in: self, adUnitID: "ca-app-pub-3940256099942544/2435281174")
     }
-    
     
 }
 
