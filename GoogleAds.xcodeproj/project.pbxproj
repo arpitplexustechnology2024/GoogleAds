@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758FF9D0E538AF53A748A5A6 /* Pods_GoogleAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02BA58559C8E30703EFA801 /* Pods_GoogleAds.framework */; };
+		B20A5A48437EC964AB672491 /* Pods_GoogleAds_GoogleAdsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3C2828156B688CFD9DCA5F /* Pods_GoogleAds_GoogleAdsUITests.framework */; };
+		B4752549E291FAD7F212FEA8 /* Pods_GoogleAdsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526DCC280DCEF225B0F28C9B /* Pods_GoogleAdsTests.framework */; };
+		BD7A13292C330CA000AAF84B /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13282C330CA000AAF84B /* RewardViewController.swift */; };
 		BDDF91482C2F691600956368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91472C2F691600956368 /* AppDelegate.swift */; };
 		BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91492C2F691600956368 /* SceneDelegate.swift */; };
-		BDDF914C2C2F691600956368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF914B2C2F691600956368 /* ViewController.swift */; };
 		BDDF914F2C2F691600956368 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDDF914E2C2F691600956368 /* Base */; };
 		BDDF91512C2F691700956368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDF91502C2F691700956368 /* Assets.xcassets */; };
 		BDDF91542C2F691700956368 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDDF91532C2F691700956368 /* Base */; };
 		BDDF915F2C2F691800956368 /* GoogleAdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF915E2C2F691800956368 /* GoogleAdsTests.swift */; };
 		BDDF91692C2F691800956368 /* GoogleAdsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91682C2F691800956368 /* GoogleAdsUITests.swift */; };
 		BDDF916B2C2F691800956368 /* GoogleAdsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF916A2C2F691800956368 /* GoogleAdsUITestsLaunchTests.swift */; };
+		BDDF91782C2F6A4B00956368 /* AppOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91772C2F6A4B00956368 /* AppOpenViewController.swift */; };
+		BDDF917A2C2F6CBE00956368 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91792C2F6CBE00956368 /* BannerViewController.swift */; };
+		BDDF917C2C2F71D100956368 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */; };
+		BDDF91822C2F83B600956368 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91812C2F83B600956368 /* NativeViewController.swift */; };
+		BDDF918A2C2F927800956368 /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDDF91892C2F927800956368 /* UnifiedNativeAdView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A3C2828156B688CFD9DCA5F /* Pods_GoogleAds_GoogleAdsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAds_GoogleAdsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2351831DFB7765A306CDB95B /* Pods-GoogleAds-GoogleAdsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds-GoogleAdsUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAds-GoogleAdsUITests/Pods-GoogleAds-GoogleAdsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FD8BBBADDFF0D1BF5625900 /* Pods-GoogleAdsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAdsTests.release.xcconfig"; path = "Target Support Files/Pods-GoogleAdsTests/Pods-GoogleAdsTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F4A62A02445F4D3892B663F /* Pods-GoogleAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAds/Pods-GoogleAds.debug.xcconfig"; sourceTree = "<group>"; };
+		526DCC280DCEF225B0F28C9B /* Pods_GoogleAdsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAdsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		624A323ED878FD1F596DA020 /* Pods-GoogleAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds.release.xcconfig"; path = "Target Support Files/Pods-GoogleAds/Pods-GoogleAds.release.xcconfig"; sourceTree = "<group>"; };
+		63C2D06B7643D5F0FC473E5A /* Pods-GoogleAds-GoogleAdsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds-GoogleAdsUITests.release.xcconfig"; path = "Target Support Files/Pods-GoogleAds-GoogleAdsUITests/Pods-GoogleAds-GoogleAdsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A02BA58559C8E30703EFA801 /* Pods_GoogleAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7A13282C330CA000AAF84B /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		BDDF91442C2F691600956368 /* GoogleAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF91472C2F691600956368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF91492C2F691600956368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDDF914B2C2F691600956368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDDF914E2C2F691600956368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDDF91502C2F691700956368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDF91532C2F691700956368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,12 @@
 		BDDF91642C2F691800956368 /* GoogleAdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleAdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF91682C2F691800956368 /* GoogleAdsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdsUITests.swift; sourceTree = "<group>"; };
 		BDDF916A2C2F691800956368 /* GoogleAdsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDDF91772C2F6A4B00956368 /* AppOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenViewController.swift; sourceTree = "<group>"; };
+		BDDF91792C2F6CBE00956368 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
+		BDDF91812C2F83B600956368 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		BDDF91892C2F927800956368 /* UnifiedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdView.xib; sourceTree = "<group>"; };
+		C220BB77BB5F6C0DEC0F13AA /* Pods-GoogleAdsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAdsTests.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAdsTests/Pods-GoogleAdsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758FF9D0E538AF53A748A5A6 /* Pods_GoogleAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4752549E291FAD7F212FEA8 /* Pods_GoogleAdsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20A5A48437EC964AB672491 /* Pods_GoogleAds_GoogleAdsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		564187BD66AC7EF5C93163E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F4A62A02445F4D3892B663F /* Pods-GoogleAds.debug.xcconfig */,
+				624A323ED878FD1F596DA020 /* Pods-GoogleAds.release.xcconfig */,
+				2351831DFB7765A306CDB95B /* Pods-GoogleAds-GoogleAdsUITests.debug.xcconfig */,
+				63C2D06B7643D5F0FC473E5A /* Pods-GoogleAds-GoogleAdsUITests.release.xcconfig */,
+				C220BB77BB5F6C0DEC0F13AA /* Pods-GoogleAdsTests.debug.xcconfig */,
+				2FD8BBBADDFF0D1BF5625900 /* Pods-GoogleAdsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		753F0DC2F7B9E3CB4D21CFF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A02BA58559C8E30703EFA801 /* Pods_GoogleAds.framework */,
+				1A3C2828156B688CFD9DCA5F /* Pods_GoogleAds_GoogleAdsUITests.framework */,
+				526DCC280DCEF225B0F28C9B /* Pods_GoogleAdsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDDF913B2C2F691600956368 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +131,8 @@
 				BDDF915D2C2F691800956368 /* GoogleAdsTests */,
 				BDDF91672C2F691800956368 /* GoogleAdsUITests */,
 				BDDF91452C2F691600956368 /* Products */,
+				564187BD66AC7EF5C93163E8 /* Pods */,
+				753F0DC2F7B9E3CB4D21CFF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +151,13 @@
 			children = (
 				BDDF91472C2F691600956368 /* AppDelegate.swift */,
 				BDDF91492C2F691600956368 /* SceneDelegate.swift */,
-				BDDF914B2C2F691600956368 /* ViewController.swift */,
 				BDDF914D2C2F691600956368 /* Main.storyboard */,
+				BDDF91892C2F927800956368 /* UnifiedNativeAdView.xib */,
+				BD7A13282C330CA000AAF84B /* RewardViewController.swift */,
+				BDDF91812C2F83B600956368 /* NativeViewController.swift */,
+				BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */,
+				BDDF91772C2F6A4B00956368 /* AppOpenViewController.swift */,
+				BDDF91792C2F6CBE00956368 /* BannerViewController.swift */,
 				BDDF91502C2F691700956368 /* Assets.xcassets */,
 				BDDF91522C2F691700956368 /* LaunchScreen.storyboard */,
 				BDDF91552C2F691700956368 /* Info.plist */,
@@ -134,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDF916E2C2F691800956368 /* Build configuration list for PBXNativeTarget "GoogleAds" */;
 			buildPhases = (
+				C5DE10E69095AF7A84CB0D44 /* [CP] Check Pods Manifest.lock */,
 				BDDF91402C2F691600956368 /* Sources */,
 				BDDF91412C2F691600956368 /* Frameworks */,
 				BDDF91422C2F691600956368 /* Resources */,
+				099DC3D556927F40220A3DB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDF91712C2F691800956368 /* Build configuration list for PBXNativeTarget "GoogleAdsTests" */;
 			buildPhases = (
+				8F8CF00AADC776B92D427573 /* [CP] Check Pods Manifest.lock */,
 				BDDF91562C2F691800956368 /* Sources */,
 				BDDF91572C2F691800956368 /* Frameworks */,
 				BDDF91582C2F691800956368 /* Resources */,
@@ -169,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDF91742C2F691800956368 /* Build configuration list for PBXNativeTarget "GoogleAdsUITests" */;
 			buildPhases = (
+				45362542AC462EB98C2C7877 /* [CP] Check Pods Manifest.lock */,
 				BDDF91602C2F691800956368 /* Sources */,
 				BDDF91612C2F691800956368 /* Frameworks */,
 				BDDF91622C2F691800956368 /* Resources */,
+				5928A60DBAB51E26450A2459 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +294,7 @@
 				BDDF91512C2F691700956368 /* Assets.xcassets in Resources */,
 				BDDF91542C2F691700956368 /* Base in Resources */,
 				BDDF914F2C2F691600956368 /* Base in Resources */,
+				BDDF918A2C2F927800956368 /* UnifiedNativeAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +314,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		099DC3D556927F40220A3DB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAds/Pods-GoogleAds-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAds/Pods-GoogleAds-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAds/Pods-GoogleAds-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45362542AC462EB98C2C7877 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAds-GoogleAdsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5928A60DBAB51E26450A2459 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAds-GoogleAdsUITests/Pods-GoogleAds-GoogleAdsUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAds-GoogleAdsUITests/Pods-GoogleAds-GoogleAdsUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAds-GoogleAdsUITests/Pods-GoogleAds-GoogleAdsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F8CF00AADC776B92D427573 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAdsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5DE10E69095AF7A84CB0D44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDDF91402C2F691600956368 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDDF914C2C2F691600956368 /* ViewController.swift in Sources */,
 				BDDF91482C2F691600956368 /* AppDelegate.swift in Sources */,
+				BD7A13292C330CA000AAF84B /* RewardViewController.swift in Sources */,
+				BDDF91822C2F83B600956368 /* NativeViewController.swift in Sources */,
+				BDDF91782C2F6A4B00956368 /* AppOpenViewController.swift in Sources */,
+				BDDF917A2C2F6CBE00956368 /* BannerViewController.swift in Sources */,
 				BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */,
+				BDDF917C2C2F71D100956368 /* InterstitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +605,13 @@
 		};
 		BDDF916F2C2F691800956368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4A62A02445F4D3892B663F /* Pods-GoogleAds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleAds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,11 +634,13 @@
 		};
 		BDDF91702C2F691800956368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624A323ED878FD1F596DA020 /* Pods-GoogleAds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleAds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -491,6 +663,7 @@
 		};
 		BDDF91722C2F691800956368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C220BB77BB5F6C0DEC0F13AA /* Pods-GoogleAdsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +683,7 @@
 		};
 		BDDF91732C2F691800956368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD8BBBADDFF0D1BF5625900 /* Pods-GoogleAdsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +703,7 @@
 		};
 		BDDF91752C2F691800956368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2351831DFB7765A306CDB95B /* Pods-GoogleAds-GoogleAdsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +721,7 @@
 		};
 		BDDF91762C2F691800956368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C2D06B7643D5F0FC473E5A /* Pods-GoogleAds-GoogleAdsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

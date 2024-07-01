@@ -6,24 +6,58 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class RewardViewController: UIViewController {
+class RewardViewController: UIViewController, GADFullScreenContentDelegate {
+    
+    private var rewardedAd: GADRewardedAd?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loadRewardedAd()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadRewardedAd() {
+        GADRewardedAd.load(withAdUnitID: "ca-app-pub-3940256099942544/1712485313", request: GADRequest()) { [self] ad, error in
+            if let error = error {
+                print("Rewarded ad failed to load with error: \(error.localizedDescription)")
+                return
+            }
+            rewardedAd = ad
+            rewardedAd?.fullScreenContentDelegate = self
+            print("Rewarded ad loaded.")
+        }
     }
-    */
+    
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        print("Ad did fail to present full screen content: \(error.localizedDescription)")
+        loadRewardedAd()
+      }
+
+      func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Ad will present full screen content.")
+      }
+
+      func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Ad did dismiss full screen content.")
+        loadRewardedAd()
+      }
+    
+    func showRewardedAd() {
+      guard let rewardedAd = rewardedAd else {
+        print("Ad wasn't ready.")
+        return
+      }
+
+      rewardedAd.present(fromRootViewController: self) {
+        let reward = rewardedAd.adReward
+        print("Reward received with currency \(reward.amount), amount \(reward.amount.doubleValue)")
+      }
+    }
+
+    @IBAction func showAdButtonTapped(_ sender: UIButton) {
+       showRewardedAd()
+     }
 
 }
