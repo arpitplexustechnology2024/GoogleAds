@@ -1,34 +1,36 @@
 //
-//  InterstitialViewController.swift
+//  InterstitialAdUtility.swift
 //  GoogleAds
 //
-//  Created by Arpit iOS Dev. on 28/06/24.
+//  Created by Arpit iOS Dev. on 01/07/24.
 //
 
 import GoogleMobileAds
 import UIKit
 
-class InterstitialViewController: UIViewController, GADFullScreenContentDelegate {
+class InterstitialAdUtility: NSObject, GADFullScreenContentDelegate {
     
     private var interstitial: GADInterstitialAd?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        Task {
-            await loadInterstitial()
-        }
-    }
-    
-    func loadInterstitial() async {
+    func loadInterstitial(adUnitID: String) async {
         do {
-            interstitial = try await GADInterstitialAd.load(
-                withAdUnitID: "ca-app-pub-3940256099942544/4411468910", request: GADRequest())
+            interstitial = try await GADInterstitialAd.load(withAdUnitID: adUnitID, request: GADRequest())
             interstitial?.fullScreenContentDelegate = self
+            print("Interstitial ad loaded.")
         } catch {
             print("Failed to load interstitial ad with error: \(error.localizedDescription)")
         }
     }
+    
+    func presentInterstitial(from viewController: UIViewController) {
+        guard let interstitial = interstitial else {
+            print("Ad wasn't ready.")
+            return
+        }
+        interstitial.present(fromRootViewController: viewController)
+    }
+
+    // MARK: - GADFullScreenContentDelegate
     
     func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         print("Ad did fail to present full screen content.")
@@ -41,13 +43,5 @@ class InterstitialViewController: UIViewController, GADFullScreenContentDelegate
     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print("Ad did dismiss full screen content.")
     }
-    
-    @IBAction func interstitialShowTapped(_ sender: Any) {
-        guard let interstitial = interstitial else {
-            return print("Ad wasn't ready.")
-        }
-        
-        interstitial.present(fromRootViewController: self)
-    }
-    
 }
+

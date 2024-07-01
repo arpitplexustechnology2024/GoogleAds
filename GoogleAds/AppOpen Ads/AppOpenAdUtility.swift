@@ -1,31 +1,23 @@
 //
-//  AppOpenViewController.swift
+//  AppOpenAdUtility.swift
 //  GoogleAds
 //
-//  Created by Arpit iOS Dev. on 28/06/24.
+//  Created by Arpit iOS Dev. on 01/07/24.
 //
 
 import UIKit
 import GoogleMobileAds
 
-class AppOpenViewController: UIViewController {
+class AppOpenAdUtility: NSObject, GADFullScreenContentDelegate {
     
     var appOpenAd: GADAppOpenAd?
     var isAppInBackground = false
-    var adUnitID = "ca-app-pub-3940256099942544/5575463023"
+    private var adUnitID: String?
+    private weak var rootViewController: UIViewController?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        loadAd()
-        addObservers()
-    }
-    
-    deinit {
-        removeObservers()
-    }
-    
-    func loadAd() {
+    func loadAd(adUnitID: String, rootViewController: UIViewController) {
+        self.adUnitID = adUnitID
+        self.rootViewController = rootViewController
         let request = GADRequest()
         GADAppOpenAd.load(withAdUnitID: adUnitID, request: request) { [weak self] (appOpenAd, error) in
             if let error = error {
@@ -40,11 +32,11 @@ class AppOpenViewController: UIViewController {
     }
     
     func presentAd() {
-        if let appOpenAd = appOpenAd {
-            appOpenAd.present(fromRootViewController: self)
-        } else {
+        guard let appOpenAd = appOpenAd, let rootViewController = rootViewController else {
             print("Ad wasn't ready")
+            return
         }
+        appOpenAd.present(fromRootViewController: rootViewController)
     }
     
     func addObservers() {
@@ -59,7 +51,9 @@ class AppOpenViewController: UIViewController {
     
     @objc func appDidBecomeActive() {
         if isAppInBackground {
-            loadAd()
+            if let adUnitID = adUnitID, let rootViewController = rootViewController {
+                loadAd(adUnitID: adUnitID, rootViewController: rootViewController)
+            }
             isAppInBackground = false
         }
     }
@@ -67,9 +61,9 @@ class AppOpenViewController: UIViewController {
     @objc func appWillResignActive() {
         isAppInBackground = true
     }
-}
 
-extension AppOpenViewController: GADFullScreenContentDelegate {
+    // MARK: - GADFullScreenContentDelegate
+    
     func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         print("Failed to present app open ad:", error)
     }
@@ -78,3 +72,4 @@ extension AppOpenViewController: GADFullScreenContentDelegate {
         print("App open ad dismissed.")
     }
 }
+

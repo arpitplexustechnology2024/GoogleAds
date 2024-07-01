@@ -126,7 +126,7 @@
                 <outlet property="starRatingView" destination="2Of-AP-0h9" id="zCO-9D-S0V"/>
                 <outlet property="storeView" destination="hwF-UL-Q8H" id="hRl-23-ce1"/>
             </connections>
-            <point key="canvasLocation" x="-670" y="-4"/>
+            <point key="canvasLocation" x="-671.20000000000005" y="-17.541229385307346"/>
         </view>
     </objects>
     <resources>
