@@ -10,12 +10,18 @@
 		758FF9D0E538AF53A748A5A6 /* Pods_GoogleAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02BA58559C8E30703EFA801 /* Pods_GoogleAds.framework */; };
 		B20A5A48437EC964AB672491 /* Pods_GoogleAds_GoogleAdsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3C2828156B688CFD9DCA5F /* Pods_GoogleAds_GoogleAdsUITests.framework */; };
 		B4752549E291FAD7F212FEA8 /* Pods_GoogleAdsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526DCC280DCEF225B0F28C9B /* Pods_GoogleAdsTests.framework */; };
+		BD16CFFF2D3B2C6700E854A3 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD16CFFE2D3B2C6700E854A3 /* NativeAdView.xib */; };
+		BD16D0032D3B33CC00E854A3 /* NativeSmallAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D0022D3B33CC00E854A3 /* NativeSmallAdUtility.swift */; };
+		BD16D0052D3B33EE00E854A3 /* NativeSmallAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD16D0042D3B33EE00E854A3 /* NativeSmallAdView.xib */; };
+		BD16D0072D3B3F9E00E854A3 /* NativeMediumAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD16D0062D3B3F9E00E854A3 /* NativeMediumAdView.xib */; };
+		BD16D0092D3B463000E854A3 /* NativeMediumAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16D0082D3B463000E854A3 /* NativeMediumAdUtility.swift */; };
 		BD7A13292C330CA000AAF84B /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13282C330CA000AAF84B /* RewardViewController.swift */; };
 		BD7A132B2C33208A00AAF84B /* BannerAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A132A2C33208A00AAF84B /* BannerAdUtility.swift */; };
 		BD7A132D2C33214A00AAF84B /* RewardAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A132C2C33214A00AAF84B /* RewardAdUtility.swift */; };
 		BD7A13322C3322B400AAF84B /* AppOpenAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13312C3322B400AAF84B /* AppOpenAdUtility.swift */; };
 		BD7A13352C33255D00AAF84B /* InterstitialAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13342C33255D00AAF84B /* InterstitialAdUtility.swift */; };
 		BD7A13382C33280600AAF84B /* NativeAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13372C33280600AAF84B /* NativeAdUtility.swift */; };
+		BD80F28E2D3C2598009D582C /* SwipeInterstitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80F28D2D3C2598009D582C /* SwipeInterstitialVC.swift */; };
 		BDDF91482C2F691600956368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91472C2F691600956368 /* AppDelegate.swift */; };
 		BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91492C2F691600956368 /* SceneDelegate.swift */; };
 		BDDF914F2C2F691600956368 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDDF914E2C2F691600956368 /* Base */; };
@@ -28,7 +34,6 @@
 		BDDF917A2C2F6CBE00956368 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91792C2F6CBE00956368 /* BannerViewController.swift */; };
 		BDDF917C2C2F71D100956368 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */; };
 		BDDF91822C2F83B600956368 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91812C2F83B600956368 /* NativeViewController.swift */; };
-		BDDF918A2C2F927800956368 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDDF91892C2F927800956368 /* NativeAdView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +62,18 @@
 		624A323ED878FD1F596DA020 /* Pods-GoogleAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds.release.xcconfig"; path = "Target Support Files/Pods-GoogleAds/Pods-GoogleAds.release.xcconfig"; sourceTree = "<group>"; };
 		63C2D06B7643D5F0FC473E5A /* Pods-GoogleAds-GoogleAdsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds-GoogleAdsUITests.release.xcconfig"; path = "Target Support Files/Pods-GoogleAds-GoogleAdsUITests/Pods-GoogleAds-GoogleAdsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A02BA58559C8E30703EFA801 /* Pods_GoogleAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD16CFFE2D3B2C6700E854A3 /* NativeAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		BD16D0022D3B33CC00E854A3 /* NativeSmallAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeSmallAdUtility.swift; sourceTree = "<group>"; };
+		BD16D0042D3B33EE00E854A3 /* NativeSmallAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeSmallAdView.xib; sourceTree = "<group>"; };
+		BD16D0062D3B3F9E00E854A3 /* NativeMediumAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeMediumAdView.xib; sourceTree = "<group>"; };
+		BD16D0082D3B463000E854A3 /* NativeMediumAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeMediumAdUtility.swift; sourceTree = "<group>"; };
 		BD7A13282C330CA000AAF84B /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		BD7A132A2C33208A00AAF84B /* BannerAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdUtility.swift; sourceTree = "<group>"; };
 		BD7A132C2C33214A00AAF84B /* RewardAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAdUtility.swift; sourceTree = "<group>"; };
 		BD7A13312C3322B400AAF84B /* AppOpenAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenAdUtility.swift; sourceTree = "<group>"; };
 		BD7A13342C33255D00AAF84B /* InterstitialAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdUtility.swift; sourceTree = "<group>"; };
 		BD7A13372C33280600AAF84B /* NativeAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdUtility.swift; sourceTree = "<group>"; };
+		BD80F28D2D3C2598009D582C /* SwipeInterstitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeInterstitialVC.swift; sourceTree = "<group>"; };
 		BDDF91442C2F691600956368 /* GoogleAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF91472C2F691600956368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF91492C2F691600956368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +90,6 @@
 		BDDF91792C2F6CBE00956368 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		BDDF917B2C2F71D100956368 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		BDDF91812C2F83B600956368 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
-		BDDF91892C2F927800956368 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
 		C220BB77BB5F6C0DEC0F13AA /* Pods-GoogleAdsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAdsTests.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAdsTests/Pods-GoogleAdsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,9 +183,13 @@
 		BD7A13392C33291300AAF84B /* Native Ads */ = {
 			isa = PBXGroup;
 			children = (
-				BDDF91892C2F927800956368 /* NativeAdView.xib */,
+				BD16CFFE2D3B2C6700E854A3 /* NativeAdView.xib */,
+				BD16D0042D3B33EE00E854A3 /* NativeSmallAdView.xib */,
+				BD16D0062D3B3F9E00E854A3 /* NativeMediumAdView.xib */,
 				BDDF91812C2F83B600956368 /* NativeViewController.swift */,
 				BD7A13372C33280600AAF84B /* NativeAdUtility.swift */,
+				BD16D0022D3B33CC00E854A3 /* NativeSmallAdUtility.swift */,
+				BD16D0082D3B463000E854A3 /* NativeMediumAdUtility.swift */,
 			);
 			path = "Native Ads";
 			sourceTree = "<group>";
@@ -213,6 +227,7 @@
 				BD7A13392C33291300AAF84B /* Native Ads */,
 				BD7A132E2C33223600AAF84B /* Reward Ads */,
 				BDDF914D2C2F691600956368 /* Main.storyboard */,
+				BD80F28D2D3C2598009D582C /* SwipeInterstitialVC.swift */,
 				BDDF91502C2F691700956368 /* Assets.xcassets */,
 				BDDF91522C2F691700956368 /* LaunchScreen.storyboard */,
 				BDDF91552C2F691700956368 /* Info.plist */,
@@ -346,10 +361,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD16D0052D3B33EE00E854A3 /* NativeSmallAdView.xib in Resources */,
+				BD16CFFF2D3B2C6700E854A3 /* NativeAdView.xib in Resources */,
 				BDDF91512C2F691700956368 /* Assets.xcassets in Resources */,
 				BDDF91542C2F691700956368 /* Base in Resources */,
+				BD16D0072D3B3F9E00E854A3 /* NativeMediumAdView.xib in Resources */,
 				BDDF914F2C2F691600956368 /* Base in Resources */,
-				BDDF918A2C2F927800956368 /* NativeAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,13 +497,16 @@
 				BD7A13382C33280600AAF84B /* NativeAdUtility.swift in Sources */,
 				BDDF91482C2F691600956368 /* AppDelegate.swift in Sources */,
 				BD7A13292C330CA000AAF84B /* RewardViewController.swift in Sources */,
+				BD16D0032D3B33CC00E854A3 /* NativeSmallAdUtility.swift in Sources */,
 				BDDF91822C2F83B600956368 /* NativeViewController.swift in Sources */,
 				BD7A13322C3322B400AAF84B /* AppOpenAdUtility.swift in Sources */,
+				BD16D0092D3B463000E854A3 /* NativeMediumAdUtility.swift in Sources */,
 				BDDF91782C2F6A4B00956368 /* AppOpenViewController.swift in Sources */,
 				BD7A132D2C33214A00AAF84B /* RewardAdUtility.swift in Sources */,
 				BDDF917A2C2F6CBE00956368 /* BannerViewController.swift in Sources */,
 				BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */,
 				BDDF917C2C2F71D100956368 /* InterstitialViewController.swift in Sources */,
+				BD80F28E2D3C2598009D582C /* SwipeInterstitialVC.swift in Sources */,
 				BD7A132B2C33208A00AAF84B /* BannerAdUtility.swift in Sources */,
 				BD7A13352C33255D00AAF84B /* InterstitialAdUtility.swift in Sources */,
 			);
@@ -671,6 +691,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32BBNXD889;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleAds/Info.plist;
@@ -700,6 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32BBNXD889;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleAds/Info.plist;

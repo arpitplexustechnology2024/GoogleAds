@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r6t-fG-2dF">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,22 +78,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3w-dV-AOO">
-                                <rect key="frame" x="17" y="276" width="359" height="300"/>
+                                <rect key="frame" x="16" y="119" width="361" height="533"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRu-lC-D7f">
+                                <rect key="frame" x="16" y="668" width="361" height="134"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="pa3-YV-Uhd"/>
-                                    <constraint firstAttribute="width" constant="359" id="xRR-KB-uAz"/>
+                                    <constraint firstAttribute="height" constant="134" id="wJz-wr-coz"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Nk-AS-1Sn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="j3w-dV-AOO" firstAttribute="centerX" secondItem="vsT-qh-zf9" secondAttribute="centerX" id="5M4-ef-bw4"/>
-                            <constraint firstItem="j3w-dV-AOO" firstAttribute="centerY" secondItem="vsT-qh-zf9" secondAttribute="centerY" id="H77-Sc-HB9"/>
+                            <constraint firstItem="PRu-lC-D7f" firstAttribute="leading" secondItem="5Nk-AS-1Sn" secondAttribute="leading" constant="16" id="7IH-LK-hls"/>
+                            <constraint firstItem="5Nk-AS-1Sn" firstAttribute="trailing" secondItem="j3w-dV-AOO" secondAttribute="trailing" constant="16" id="Mft-SL-VgD"/>
+                            <constraint firstItem="j3w-dV-AOO" firstAttribute="top" secondItem="5Nk-AS-1Sn" secondAttribute="top" constant="16" id="XE3-RN-Fai"/>
+                            <constraint firstItem="5Nk-AS-1Sn" firstAttribute="trailing" secondItem="PRu-lC-D7f" secondAttribute="trailing" constant="16" id="XEc-nk-x79"/>
+                            <constraint firstItem="PRu-lC-D7f" firstAttribute="top" secondItem="j3w-dV-AOO" secondAttribute="bottom" constant="16" id="dSt-Mp-vYK"/>
+                            <constraint firstItem="5Nk-AS-1Sn" firstAttribute="bottom" secondItem="PRu-lC-D7f" secondAttribute="bottom" constant="16" id="yFu-oP-H6T"/>
+                            <constraint firstItem="j3w-dV-AOO" firstAttribute="leading" secondItem="5Nk-AS-1Sn" secondAttribute="leading" constant="16" id="zgr-EG-qHI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Native Ads" id="8uc-du-KA6"/>
                     <connections>
+                        <outlet property="nativeAd" destination="PRu-lC-D7f" id="gTH-di-1Gw"/>
                         <outlet property="nativeAdPlaceholder" destination="j3w-dV-AOO" id="8xg-1G-eZU"/>
                     </connections>
                 </viewController>
@@ -128,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGO-MM-FOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5773.2824427480909" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="6560" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wxq-m8-rcl">
@@ -183,6 +191,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chR-eS-tsj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4100" y="-35.211267605633807"/>
+        </scene>
+        <!--Swipe InterstitialVC-->
+        <scene sceneID="DxA-Aq-IC0">
+            <objects>
+                <viewController storyboardIdentifier="SwipeInterstitialVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r6t-fG-2dF" customClass="SwipeInterstitialVC" customModule="ProjectDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g6L-OY-GaO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lOF-Qo-1Wi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gx-6e-Qif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5760" y="-35"/>
         </scene>
     </scenes>
     <resources>

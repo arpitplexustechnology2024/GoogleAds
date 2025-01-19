@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5a-ny-TnF">
-                    <rect key="frame" x="10" y="226" width="355" height="45"/>
+                    <rect key="frame" x="10" y="606" width="355" height="45"/>
                     <color key="backgroundColor" systemColor="systemMintColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="0u7-MV-aeN"/>
@@ -27,9 +27,9 @@
                     </state>
                 </button>
                 <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="gZI-yG-MRk" customClass="GADMediaView">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="530"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="SEi-zT-VDr"/>
+                        <constraint firstAttribute="height" priority="999" constant="150" id="5fe-75-58l"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP5-hO-bzj">
@@ -44,26 +44,26 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Headline" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qI0-Un-xC8">
-                    <rect key="frame" x="68" y="166" width="297" height="17"/>
+                    <rect key="frame" x="68" y="546" width="297" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" systemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x8s-Tj-fcv">
-                    <rect key="frame" x="8" y="166" width="50" height="50"/>
+                    <rect key="frame" x="8" y="546" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="22N-qD-r35"/>
                         <constraint firstAttribute="width" constant="50" id="ZcN-I1-zua"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Body that is really really long and can take up to two lines or sometimes even more." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-8I-bsd">
-                    <rect key="frame" x="68" y="188" width="297" height="24"/>
+                    <rect key="frame" x="68" y="568" width="297" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <color key="textColor" systemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.99631818670000005" blue="0.87160433000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="0.99607843137254903" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="qI0-Un-xC8" firstAttribute="top" secondItem="gZI-yG-MRk" secondAttribute="bottom" constant="16" id="4fw-o0-gQc"/>
                 <constraint firstAttribute="trailing" secondItem="gZI-yG-MRk" secondAttribute="trailing" id="6Cg-Bf-qEa"/>
@@ -75,6 +75,7 @@
                 <constraint firstItem="v5a-ny-TnF" firstAttribute="leading" secondItem="P0C-uO-9nj" secondAttribute="leading" constant="10" id="WgF-od-Aq3"/>
                 <constraint firstAttribute="trailing" secondItem="v5a-ny-TnF" secondAttribute="trailing" constant="10" id="XA0-6j-Jib"/>
                 <constraint firstItem="pP5-hO-bzj" firstAttribute="left" secondItem="P0C-uO-9nj" secondAttribute="left" id="YfM-kh-7LS"/>
+                <constraint firstAttribute="bottom" secondItem="v5a-ny-TnF" secondAttribute="bottom" constant="16" id="Zpa-CM-DzB"/>
                 <constraint firstItem="Nap-8I-bsd" firstAttribute="top" secondItem="qI0-Un-xC8" secondAttribute="bottom" constant="5" id="gF9-wu-mLX"/>
                 <constraint firstItem="gZI-yG-MRk" firstAttribute="top" secondItem="P0C-uO-9nj" secondAttribute="top" id="lFs-jW-FwF"/>
                 <constraint firstItem="Nap-8I-bsd" firstAttribute="leading" secondItem="x8s-Tj-fcv" secondAttribute="trailing" constant="10" id="oXo-ES-xFz"/>
