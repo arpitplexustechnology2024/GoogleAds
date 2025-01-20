@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r6t-fG-2dF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJ6-Gh-xsH">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -136,7 +136,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGO-MM-FOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6560" y="-35"/>
+            <point key="canvasLocation" x="5691" y="-35"/>
+        </scene>
+        <!--SwipeVC-->
+        <scene sceneID="8Fx-1W-mxC">
+            <objects>
+                <viewController storyboardIdentifier="SwipeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SJ6-Gh-xsH" customClass="SwipeVC" customModule="GoogleAds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ipq-vI-Rt8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F7Z-Lf-kzM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFr-8X-of6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6410" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wxq-m8-rcl">
@@ -191,21 +206,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chR-eS-tsj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4100" y="-35.211267605633807"/>
-        </scene>
-        <!--Swipe InterstitialVC-->
-        <scene sceneID="DxA-Aq-IC0">
-            <objects>
-                <viewController storyboardIdentifier="SwipeInterstitialVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r6t-fG-2dF" customClass="SwipeInterstitialVC" customModule="ProjectDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g6L-OY-GaO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="lOF-Qo-1Wi"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9gx-6e-Qif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5760" y="-35"/>
         </scene>
     </scenes>
     <resources>

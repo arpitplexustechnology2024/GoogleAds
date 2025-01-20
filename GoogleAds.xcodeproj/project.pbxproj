@@ -21,7 +21,8 @@
 		BD7A13322C3322B400AAF84B /* AppOpenAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13312C3322B400AAF84B /* AppOpenAdUtility.swift */; };
 		BD7A13352C33255D00AAF84B /* InterstitialAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13342C33255D00AAF84B /* InterstitialAdUtility.swift */; };
 		BD7A13382C33280600AAF84B /* NativeAdUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A13372C33280600AAF84B /* NativeAdUtility.swift */; };
-		BD80F28E2D3C2598009D582C /* SwipeInterstitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80F28D2D3C2598009D582C /* SwipeInterstitialVC.swift */; };
+		BD80F28E2D3C2598009D582C /* SwipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80F28D2D3C2598009D582C /* SwipeCell.swift */; };
+		BDCAF79E2D3EDAE100913D3C /* SwipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCAF79D2D3EDAE100913D3C /* SwipeVC.swift */; };
 		BDDF91482C2F691600956368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91472C2F691600956368 /* AppDelegate.swift */; };
 		BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF91492C2F691600956368 /* SceneDelegate.swift */; };
 		BDDF914F2C2F691600956368 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BDDF914E2C2F691600956368 /* Base */; };
@@ -73,7 +74,8 @@
 		BD7A13312C3322B400AAF84B /* AppOpenAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenAdUtility.swift; sourceTree = "<group>"; };
 		BD7A13342C33255D00AAF84B /* InterstitialAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdUtility.swift; sourceTree = "<group>"; };
 		BD7A13372C33280600AAF84B /* NativeAdUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdUtility.swift; sourceTree = "<group>"; };
-		BD80F28D2D3C2598009D582C /* SwipeInterstitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeInterstitialVC.swift; sourceTree = "<group>"; };
+		BD80F28D2D3C2598009D582C /* SwipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCell.swift; sourceTree = "<group>"; };
+		BDCAF79D2D3EDAE100913D3C /* SwipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeVC.swift; sourceTree = "<group>"; };
 		BDDF91442C2F691600956368 /* GoogleAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF91472C2F691600956368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF91492C2F691600956368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,7 +229,8 @@
 				BD7A13392C33291300AAF84B /* Native Ads */,
 				BD7A132E2C33223600AAF84B /* Reward Ads */,
 				BDDF914D2C2F691600956368 /* Main.storyboard */,
-				BD80F28D2D3C2598009D582C /* SwipeInterstitialVC.swift */,
+				BDCAF79D2D3EDAE100913D3C /* SwipeVC.swift */,
+				BD80F28D2D3C2598009D582C /* SwipeCell.swift */,
 				BDDF91502C2F691700956368 /* Assets.xcassets */,
 				BDDF91522C2F691700956368 /* LaunchScreen.storyboard */,
 				BDDF91552C2F691700956368 /* Info.plist */,
@@ -503,10 +506,11 @@
 				BD16D0092D3B463000E854A3 /* NativeMediumAdUtility.swift in Sources */,
 				BDDF91782C2F6A4B00956368 /* AppOpenViewController.swift in Sources */,
 				BD7A132D2C33214A00AAF84B /* RewardAdUtility.swift in Sources */,
+				BDCAF79E2D3EDAE100913D3C /* SwipeVC.swift in Sources */,
 				BDDF917A2C2F6CBE00956368 /* BannerViewController.swift in Sources */,
 				BDDF914A2C2F691600956368 /* SceneDelegate.swift in Sources */,
 				BDDF917C2C2F71D100956368 /* InterstitialViewController.swift in Sources */,
-				BD80F28E2D3C2598009D582C /* SwipeInterstitialVC.swift in Sources */,
+				BD80F28E2D3C2598009D582C /* SwipeCell.swift in Sources */,
 				BD7A132B2C33208A00AAF84B /* BannerAdUtility.swift in Sources */,
 				BD7A13352C33255D00AAF84B /* InterstitialAdUtility.swift in Sources */,
 			);
